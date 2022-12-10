@@ -7,6 +7,7 @@ public class playerMove : MonoBehaviour
     public GameObject coconutPrefab;
     public Rigidbody2D RB2D;
     public Animator animator;
+    public AudioSource throwSound;
 
     private Vector3 offset = new Vector3(1f, 0, 0);
     private float moveHorizontal;
@@ -30,6 +31,7 @@ public class playerMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameObject coconut = Instantiate(coconutPrefab, transform.position + offset, transform.rotation) as GameObject;
+            throwSound.Play();
             Destroy(coconut, 1f);
         }
     }

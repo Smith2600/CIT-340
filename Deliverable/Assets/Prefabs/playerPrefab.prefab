@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4164770813292239690}
   - component: {fileID: 4164770813292239702}
   - component: {fileID: 2994713221898256451}
+  - component: {fileID: 8505870946756202192}
   - component: {fileID: 7817186945481093559}
   m_Layer: 0
   m_Name: playerPrefab
@@ -150,6 +151,19 @@ MonoBehaviour:
   coconutPrefab: {fileID: 6189405293445061308, guid: f6c6571d1ab5ac44f8f1862f2bf4f771, type: 3}
   RB2D: {fileID: 4164770813292239702}
   animator: {fileID: 7817186945481093559}
+--- !u!114 &8505870946756202192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4164770813292239691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82df1a1886774a349945f32d21708e4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bumpSound: {fileID: 0}
 --- !u!95 &7817186945481093559
 Animator:
   serializedVersion: 4
